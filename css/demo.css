@@ -220,19 +220,26 @@ code {
 
 /* Dashboard */
 
-.center-container {
+.dashboard_container{
+   background-color: #d8315d;
+}
+
+.dashboard-center-container {
    display: flex;
    justify-content: center;
    align-items: center;
    min-height: 100vh;
-   background-color: #d8315d;
+   
 }
 
-.shadow-container {
+.dashboard-shadow-container {
    background-color: #fff;
    /* Set your desired background color */
    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
    /* Set your desired shadow properties */
-   padding: 20px;
+   /*padding: 20px;
    /* Optional: Add some padding to the container */
+   padding: 40px 0;
 }
+
+
