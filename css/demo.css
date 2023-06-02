@@ -225,7 +225,7 @@ code {
    justify-content: center;
    align-items: center;
    min-height: 100vh;
-   background-color:#d8315d;
+   background-color: #d8315d;
 }
 
 .shadow-container {
@@ -236,4 +236,3 @@ code {
    padding: 20px;
    /* Optional: Add some padding to the container */
 }
-
