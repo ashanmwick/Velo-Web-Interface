@@ -1,5 +1,5 @@
 body {
-  background: #eee !important;
+  background:#d7315d !important;
 }
 
 .wrapper {
@@ -11,10 +11,10 @@ body {
   max-width: 380px;
   padding: 15px 35px 45px;
   margin: 0 auto;
-  background-color: #fff;
+  background-color:#ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.form-signin .form-signin-heading,
+
 .form-signin .checkbox {
   margin-bottom: 30px;
 }
@@ -43,3 +43,4 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+.logo{align:center;}
