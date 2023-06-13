@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,32 +9,33 @@
     <!--import awsome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--import bootstrap framework-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://167.71.198.111:5000/static/css/style.css">
     <!-- Demo CSS -->
-    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="http://167.71.198.111:5000/static/css/demo.css">
 
 </head>
 
 <body>
+    <script src="script.js"></script>
     <div class="dashboard_container">
 
         <div class="dashboard-center-container">
 
             <div class="container dashboard-shadow-container">
-
+                <h1 id="variable">http://167.71.198.111:5000/769246233</h1>
                 <div class="row"><!--Main container-->
                     <div class="col-md-2"><!--menu section-->
                         <ul class="nav flex-column">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#"><i
-                                        class="fa fa-car fa-3x"></i></a>
+                                        class="fa fa-tachometer fa-3x"></i></a>
                                 <!--Use proper awsome font as icon/refer orignal dashboard-->
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fa fa-car fa-3x"></i></a>
+                                <a class="nav-link" href="#"><i class="fa fa-calendar fa-3x"></i></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fa fa-car fa-3x"></i></a>
+                                <a class="nav-link" href="#"><i class="fa fa-cogs fa-3x"></i></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link disabled"><i class="fa fa-user fa-3x"></i></a>
@@ -42,16 +43,28 @@
                         </ul>
                     </div>
 
-                    <div class="col-md-10"><!--Control panel section-->
-                        <h3>Test Control Panel</h3>
-                        <p>Test 1</p>
-                        <p>Test</p>
-                    </div>
+                    <!--History panel section-->
+
+                    <div class="col-md-10">
+                        <table class="separate"width="80%">
+                            <tr class="tabs">
+                                <td>Day No</td>
+                                <td>Date</td>
+                            </tr>
+
+                    
+                           <tr class="tabs">
+                                <tbody class="tabs" id="dynamicContent"></tbody>
+                            </tr>
+                            </table>
+                        </div>
+                    
                 </div>
 
             </div>
         </div>
     </div>
+   
 </body>
 
 </html>
